@@ -1,19 +1,5 @@
 package org.firstinspires.ftc.teamcode;
 
-import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-
-@TeleOp
-public class LinearOpModeExample extends LinearOpMode{
-    @Override
-    public void runOpMode(){
-        while (!isStopRequested()){
-
-        }
-    }
-}
-package org.firstinspires.ftc.teamcode;
-
 import static com.qualcomm.robotcore.hardware.DcMotorSimple.Direction.FORWARD;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import static com.qualcomm.robotcore.hardware.DcMotorSimple.Direction.REVERSE;
@@ -58,23 +44,27 @@ public class FraserAutonLeftV1 extends OpMode{
         FL.setPower(0.5);
         FR.setPower(0.5);
         BR.setPower(0.5);
-        S1.setPower(0.8);
-        S2.setPower(-0.8);
+        S1.setPower(0.5);
+        S2.setPower(-0.5);
         Arm.setPosition(0.1);
-        while (runtime.seconds() < 1.2){}
+        while (runtime.seconds() < 1){}
         BL.setPower(-0.5);
         FL.setPower(-0.5);
         FR.setPower(0.5);
         BR.setPower(0.5);
-        while (runtime.seconds() < 2){}
-        while (runtime.seconds() < 2.2){}
+        while (runtime.seconds() < 1.8){}
+        BL.setPower(0);
+        FL.setPower(0);
+        FR.setPower(0);
+        BR.setPower(0);
+        while (runtime.seconds() < 3.5){}
+        Arm.setPosition(0.5);
+        while (runtime.seconds() < 5){}
         BL.setPower(0.5);
         FL.setPower(0.5);
         FR.setPower(0.5);
         BR.setPower(0.5);
-        while (runtime.seconds() < 2.4){}
-        Wrist.setPosition(0.2);
-        while (runtime.seconds() < 3.6){}
+        while (runtime.seconds() < 5.9){}
         S1.setPower(0);
         S2.setPower(0);
         BL.setPower(0);
@@ -84,50 +74,38 @@ public class FraserAutonLeftV1 extends OpMode{
         Intake.setPosition(0.25);
         S1.setPower(0);
         S2.setPower(0);
-        Wrist.setPosition(0);
-        Arm.setPosition(0.5);
-        runtime.reset();
+        while (runtime.seconds() < 1);
+        S1.setPower(0);
+        S2.setPower(0);
         BL.setPower(-0.2);
         FL.setPower(-0.2);
-        FR.setPower(-0.2);
         BR.setPower(-0.2);
-        while (runtime.seconds() < 1){}
-        BL.setPower(0.5);
-        FL.setPower(0.5);
-        FR.setPower(-0.5);
-        BR.setPower(-0.5);
-        S1.setPower(-1);
-        S2.setPower(1);
-        while (runtime.seconds() < 2.6){}
-        BL.setPower(0);
-        FL.setPower(0);
-        FR.setPower(0);
-        BR.setPower(0);
-        while (runtime.seconds() < 3.2){}
-        BL.setPower(-0.5);
-        FL.setPower(0.5);
-        FR.setPower(-0.5);
-        BR.setPower(0.5);
-        while (runtime.seconds() < 4){}
-        BL.setPower(0.5);
-        FL.setPower(0.5);
-        FR.setPower(0.5);
-        BR.setPower(0.5);
-        while (runtime.seconds() < 5.4){}
-        BL.setPower(0.5);
-        FL.setPower(0.5);
-        FR.setPower(-0.5);
-        BR.setPower(-0.5);
-        while (runtime.seconds() < 6.2){}
-        BL.setPower(0.5);
-        FL.setPower(0.5);
-        FR.setPower(0.5);
-        BR.setPower(0.5);
-        while (runtime.seconds() < 6.6){}
-        BL.setPower(0);
-        FL.setPower(0);
-        FR.setPower(0);
-        BR.setPower(0);
+        FR.setPower(-0.2);
+        while (runtime.seconds() < 2.5);
+        S1.setPower(-0.4);
+        S2.setPower(-0.4);
+        BL.setPower(-0.3);
+        FL.setPower(-0.3);
+        BR.setPower(-0.3);
+        FR.setPower(-0.3);
+        while (runtime.seconds() < 1.5);
+        S1.setPower(-0.3);
+        S2.setPower(-0.3);
+        BL.setPower(-0.3);
+        FL.setPower(-0.3);
+        BR.setPower(0.3);
+        FR.setPower(0.3);
+        while (runtime.seconds() < 2.5);
+        BL.setPower(0.3);
+        FL.setPower(-0.3);
+        BR.setPower(-0.3);
+        FR.setPower(-0.3);
+        S1.setPower(0);
+        S2.setPower(0);
+        Arm.setPosition(0.3);
+        Wrist.setPosition(0.05);
+        while (runtime.seconds() < 3.5);
+        
     }
     @Override
     public void loop(){
