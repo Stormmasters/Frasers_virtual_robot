@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="liberica-17" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="liberica-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/../road-runner-quickstart-quickstart1/road-runner-quickstart-quickstart1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode" />
+  </component>
 </project>
